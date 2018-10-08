@@ -18,3 +18,8 @@ test('Adds 2 + 2 to NOT equal 5', () => {
 test('Should be null', () => {
   expect(functions.isNull()).toBeNull();
 });
+
+// Test passes, because null is falsy 
+test('Should be falsy', () => {
+  expect(functions.checkValue(null)).toBeFalsy();
+});

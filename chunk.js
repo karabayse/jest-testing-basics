@@ -9,7 +9,7 @@ const chunkArray = (arr, len) => {
 
     // Check if last, and if last length is equal to the chunk length
     if (!last || last.length === len) {
-      chunkedarr.push([val]);
+      chunkedArr.push([val]);
     } else {
       last.push(val);
     }
